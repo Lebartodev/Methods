@@ -15,10 +15,10 @@ public class TrapMethod {
         double max = 0;
         double res = 0;
         for(double x = a;x<=b;x+=0.001)
-        if(max<Function.d2func(x)){
-            max = Function.d2func(x);
+            if(max<Function.d2func(x)){
+                max = Function.d2func(x);
 
-        }
+            }
         res =max*(b-a)*Math.pow(h,2)/24;
         if(res<eps){
             return true;
